@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>climbo.info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/climbo_app.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="http://climbo.info" target="_blank">climbo.info</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="zonas.html">Zonas</a></li>
+              <li><a href="vias.html">Vías</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <!--
+              <li><a href="search.html">Buscar</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+			  -->
+            </ul>
+			<!--
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+			-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row-fluid">
+        <div class="span3">
+        	<img src="img/bolo.jpg" class="img-polaroid profile">
+       	</div>
+        <div class="span9">
+          <h2>Wladimir Szczerban</h2>
+          <ul class="thumbnails text-center">
+          <li class="span3">
+          	<img alt="novato" src="img/novato.png">
+          	<div>20 vías</div>
+          </li>
+          <li class="span3">
+          	<img alt="novato" src="img/camping.png">
+          	<div>20 contribuciones</div>
+          </li>
+          <li class="span3">
+          	<img alt="novato" src="img/pro_climber.png">
+          	<div>50 vías</div>
+          </li>
+          </ul>
+        </div>
+      </div>
+	  <div class="row-fluid">
+	  	<div class="span4">
+	  		<h3>Datos personales</h3>
+        	<ul class="unstyled">
+        		<li>Fecha nacimiento: 10 mayo 1978</li>
+        		<li>Sexo: Masculino</li>
+        		<li>Inicio escalada: 1998</li>
+        		<li>Ciudad residencia: Barcelona</li>
+        	</ul>
+       	</div>
+       	<div class="span4">
+       		<h3>Perfil de escalada</h3>
+        	<ul class="unstyled">
+        		<li>Grado medio: <span class="badge badge-success">6a</span></li>
+        		<li>Grado máximo: <span class="badge badge-important">6c</span></li>
+        		<li>Vías escaladas: <span class="badge badge-inverse">55</span></li>
+        		<li>Contibuciones: <span class="badge badge-info">30</span></li>
+        	</ul>
+       	</div>
+       	<div class="span4">
+        	<h3>Escaladas notables</h3>
+        	<ul class="unstyled">
+        		<li>Puy Puy: <span class="badge badge-info">6c</span></li>
+        		<li>La mala dona: <span class="badge badge-info">6b</span></li>
+        		<li>Casi Casi: <span class="badge badge-info">6b</span></li>
+        		<li>Pikuli: <span class="badge badge-info">6a</span></li>
+        	</ul>
+       	</div>
+	  </div>
+	  <div class="row-fluid">
+	    <div class="span8">
+	    	<div class="row-fluid">
+	    		<div class="span6">
+			  		<h3>Zonas favoritas</h3>
+		        	<ul class="unstyled">
+		        		<li><span id="star"></span> Oliana</li>
+		        		<li><span id="star1"></span> La Guairita</li>
+		        		<li><span id="star2"></span> Montserrat</li>
+		        		<li><span id="star3"></span> Siurana</li>
+		        	</ul>
+		       	</div>
+		       	<div class="span6">
+		       		<h3>Vías favoritas</h3>
+		        	<ul class="unstyled">
+		        		<li>Deditos: <span class="badge">5c</span></li>
+		        		<li>La plana: <span class="badge">6a</span></li>
+		        		<li>Paquita: <span class="badge">6a</span></li>
+		        		<li>Casi Casi: <span class="badge">6b</span></li>
+		        	</ul>
+		       	</div>
+	    	</div>
+	    	<div class="row-fluid">
+			  	<div class="span12">
+			  		<h3>Evolución</h3>
+		        	<div id="climbing_evolution" style="width:100%; height:400px;"></div>
+			  	</div>
+			  </div>
+	    </div>
+       	<div class="span4">
+        	<h3>Resumen Escaladas</h3>
+        	<div id="climbing_pie" style="width:100%; height:300px;"></div>
+       	</div>
+	  </div>
+	  
+	  
+	  
+      <hr>
+
+      <footer>
+        <p>&copy; climbo.info</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="js/jquery.raty.min.js"></script>
+    <script src="js/profile.js"></script>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-39919453-2', 'climbo.info');
+	  ga('send', 'pageview');
+	</script>
+  </body>
+</html>
